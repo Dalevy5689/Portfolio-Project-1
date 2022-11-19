@@ -195,6 +195,7 @@ body {
 }
 
 .social {
+    vertical-align: bottom;
     position: absolute;
     bottom: 20px;
     z-index: 10;
@@ -275,8 +276,8 @@ body {
 }
 
 .about img {
-    height:auto;
-    width: 420px;
+    height:500px;
+    width: 500px;
 }
 
 .about-text {
