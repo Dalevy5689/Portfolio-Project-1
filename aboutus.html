@@ -15,20 +15,66 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Encode+Sans+CondensedOpen+Sans" />
 
-        <title>Xaymaca Coffee: Quite possibly the best coffee in the world</title>
+        <title>Xaymaca Coffee About Us</title>
     </head>
 </head>
 <body>
-    
-    
-    
-  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-  <!-- build:js js/main.js -->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-  <!-- endbuild -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html"><img src="/assets/img/XaymacaCoffee Main Logo.png" class="header-logo" alt="Xayamaca Coffee Logo"></a>
+            </div>
+            <a href="#" class="toggle-button"><i class="fa-solid fa-bars fa-2x"></i></a>
+                <div class="navbar-links">
+                    <ul>
+                        <li class="nav-item"><a href="#">Login</a></li>
+                        <li class="nav-item"><a href="products.html">Coffee</a></li>
+                        <li class="nav-item"><a href="#">Apparel</a></li>
+                        <li class="nav-item active"><a href="#">About Us</a></li>
+                        <li class="nav-item"><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
 
+    <section class="about">
+        <div class="main">
+            <img src="/assets/img/DSC_2398.JPG">
+            <div class="about-text">
+                <br>
+                <h2>Who We Are</h2>
+                <p>Xaymaca Coffee Traders was created in 2009 by the patriarch of the Levy family, David Levy. He built our company on 2 simple tenets –
+                   excellent customer service and honesty. We, at XCT, will always call you back, and we will always tell our customers and partners
+                   the truth so they can run their businesses effectively. By staying true to our values, Xaymaca has become the leading coffee importer
+                   and distributor of Jamaica’s Blue Mountain Coffee and the US representative of Coffee Traders Limited – the #1 Jamaican Blue Mountain
+                   coffee producer both in quantity and quality.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/xaymacacoffee/"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/xaymacacoffee/"><i class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCHPw-rvrcq24R98yjQBEGGQ"><i class="fa-brands fa-square-youtube fa-2x"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

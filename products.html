@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <head>
@@ -13,52 +13,44 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Encode+Sans+Condensed&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Encode+Sans+CondensedOpen+Sans" />
 
-        <title>Xaymaca Coffee</title>
+        <title>Xaymaca Coffee Products</title>
     </head>
 </head>
-
 <body>
-    <section class="showcase">
-        <header>
-            <a href="products.html"><img src="/assets/img/XaymacaCoffee Main Logo.png" class="logo"></a>
-            <div class="toggle"><i class="fa-solid fa-bars fa-2x"></i></div>
-        </header>
-
-        <video src="/assets/videos/Coffee Mountain - Made with Clipchamp.mp4" muted loop autoplay></video>
-
-        <div class="overlay"></div>
-
-        <div class="text">
-            <h2>THE BLUE MOUNTAINS</h2>
-            <h3>DISCOVER THE FLAVOR OF JAMAICA</h3>
-            <p>Welcome to the home of one of the world’s most sought-after coffees, Jamaica Blue Mountain Coffee. We invite you to explore our exquisite roasted coffee options from that mystical region.</p>
-            <a href="products.html">EXPLORE</a>
-        </div>
-
-        <ul class="social">
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html"><img src="/assets/img/XaymacaCoffee Main Logo.png" class="header-logo" alt="Xayamaca Coffee Logo"></a>
+            </div>
+            <a href="#" class="toggle-button"><i class="fa-solid fa-bars fa-2x"></i></a>
+                <div class="navbar-links">
+                    <ul>
+                        <li class="nav-item"><a href="#">Login</a></li>
+                        <li class="nav-item active"><a href="#">Coffee</a></li>
+                        <li class="nav-item"><a href="#">Apparel</a></li>
+                        <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    
+    <footer>
+        <ul class="social-media">
             <li><a href="https://www.facebook.com/xaymacacoffee/"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
             <li><a href="https://www.instagram.com/xaymacacoffee/"><i class="fa-brands fa-square-instagram fa-2x"></i></a></li>
             <li><a href="https://www.youtube.com/channel/UCHPw-rvrcq24R98yjQBEGGQ"><i class="fa-brands fa-square-youtube fa-2x"></i></a></li>
         </ul>
-    </section>
-
-    <div class="menu">
-        <ul>
-            <li><a href="products.html">Coffee</a></li>
-            <li><a href="#">Apparel</a></li><!--No apparel page yet. Coming soon.-->
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-        </ul>
-    </div>
+    </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
     <script>
         const menuToggle = document.querySelector('.toggle')
@@ -69,5 +61,6 @@
             showcase.classList.toggle('active')
         })
     </script>
+
 </body>
 </html>
