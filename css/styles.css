@@ -12,8 +12,8 @@ body {
     padding: 0;
 }
 
-.header-logo{
-    postion: relative
+.header-logo {
+    postion: relative;
     filter: invert(1);
     -webkit-filter: invert(1);
     margin-left: 30px;
