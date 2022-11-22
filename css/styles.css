@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     background-color: #FFFCF2;
     margin: 0;
@@ -135,6 +136,12 @@ body {
     transform: scale(1.1) translateY(-10px);
 }
 
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .showcase video {
     position: absolute;
     top: 0;
@@ -192,6 +199,11 @@ body {
 
 .text a:hover {
     letter-spacing: 6px;
+}
+
+.aboutus-img {
+    width: auto;
+    height: auto;
 }
 
 .social {
@@ -276,8 +288,9 @@ body {
 }
 
 .about img {
-    height:500px;
+    height:450px;
     width: 500px;
+    padding-right: 10px;
 }
 
 .about-text {
@@ -296,6 +309,26 @@ body {
     margin-left: 10px;
     margin-bottom: 25px;
     letter-spacing: 1px;
+}
+
+section {
+    padding: 45px 15%;
+}
+
+.contact{
+   height: 100%;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact-img {
+    position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {

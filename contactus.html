@@ -37,9 +37,23 @@
         </nav>
     </header>
     <section class="contact">
-        <div class="contact-form">
+        <div class="contact-form row-4">
+            <h2>NEED A NEW BAG</h2>
+            <p>We hope you love your selections but if for any reason you wish to send it back or exchange it, we accept returns within 30 days of receipt of the package. We would appreciate an email or phone call before the return so that we may have to opportunity to correct the issue first.</p>
+            <br>
             <h2>CONTACT US</h2>
-            <p></p>
+            <p>Want share your coffee exeperience with us or have any questions? Want to see new offerings. Please fill out the form below or call 555-555-1234.</p>
+            <form action="">
+                <input type="" placeholder="Your Name" required>
+                <input type="email" name="email" id="" placeholder="E-mail">
+                <textarea name="" id="" cols="50" rows="10" placeholder="Share your message." required>
+
+                </textarea>
+                <button><input type="submit" name="" value="Share" class="btn"></button>
+            </form>
+        </div>
+        <div class="contact-img row-4">
+            <img src="/assets/img/cliftonMountView.jpg" alt="Clifton Mount Estate House">
         </div>
     </section>
     <footer>
@@ -57,14 +71,5 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <!-- endbuild -->
-    <script>
-        const menuToggle = document.querySelector('.toggle')
-        const showcase = document.querySelector('.showcase')
-
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-        })
-    </script>
 </body>
 </html>
